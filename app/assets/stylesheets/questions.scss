@@ -1,0 +1,24 @@
+// Place all the styles related to the Questions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+
+body {
+  background-color: white; // Using this variable
+}
+
+.card{
+    
+    color: red;
+}
+
+.left{
+  background-color: rgb(186, 186, 186);
+  width: 100px
+}
+
+
+#answer {
+  background-color: rgb(255, 255, 173);
+}

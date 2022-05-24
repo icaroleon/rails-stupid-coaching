@@ -1,0 +1,22 @@
+<h1> Stupid coaching </h1>
+<div class="card"> 
+  <div class="left"></div>
+  <div id="question"><h2><%= @question  %></h2>
+  <i>-You</i></div>
+</div>
+
+<div class="card"> 
+  <div class="left"></div>
+  <div id="answer"><%if @question.end_with?("?")%>
+    <h2><%="Silly question, get dressed and go to work!"%></h2>
+    <%elsif @question == "Im going back to work" %>
+    <h2><%= "Great!"%><h2>
+    <%else%>
+    <h2><%= "I don't care, get dressed and go to work!"%></h2>
+    <%end%>
+    <i>- Your coach</i>
+  </div>
+</div>
+
+
+<div><%= link_to "Ask a new question", ask_path %></div>
